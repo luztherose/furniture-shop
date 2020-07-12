@@ -1,16 +1,19 @@
 
 .wrapper {
     max-width: 1440px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 html {
-    font-size: 125%;
+    font-size: 62.5%;
 }
 body {
     background-color: $body-background-color;
-    font-family:'Lato', sans-serif;
+    font-family:$base-font;
+    font-size: 2rem;
     font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 32px;
 }
 .blog-page,
 .contact-page {

@@ -237,18 +237,21 @@ html {
 
 .wrapper {
   max-width: 1440px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
 html {
-  font-size: 125%;
+  font-size: 62.5%;
 }
 
 body {
   background-color: #F5F5F5;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
   font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 32px;
 }
 
 .blog-page,
@@ -282,13 +285,13 @@ img {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 85% 45%;
+  background-position: 84% center;
 }
 
 h1 {
-  font-size: 68px;
+  font-size: 6.8rem;
   font-weight: 400;
-  font-family: 'Kumar One Outline', cursive;
+  font-family: "Kumar One Outline", cursive;
 }
 
 .home-page h1 {
@@ -304,8 +307,8 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 45%;
-  height: 60vh;
-  background-position: left center;
+  height: 65vh;
+  background-position: 60% center;
 }
 
 .blog-page h1,
@@ -323,10 +326,10 @@ h1 {
 
 .contact-page header {
   background-image: url(../assets/contact-image.jpg);
-  height: 70vh;
+  height: 65vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 40% left;
+  background-position: 38% left;
 }
 
 .home-page nav, ul {
@@ -341,10 +344,24 @@ nav {
           justify-content: flex-end;
   padding-top: 20px;
   padding-right: 50px;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 nav ul li a {
+  color: #151514;
   padding: 15px 20px;
+}
+
+nav ul li a:hover {
+  background: #e6e6e6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav li span {
+  border-bottom: 3px solid #F8FB05;
 }
 
 .main-nav-container {
@@ -359,36 +376,94 @@ nav ul li a {
 .logo {
   width: 80px;
   font-family: "Kumar One", cursive;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 400;
   margin-left: 50px;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.logo a {
+  color: #151514;
+}
+
+.sub-navigation {
+  padding: 5px 15px;
+  background: #065635;
+  color: #F5F5F5;
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 32px;
+  text-transform: uppercase;
+  border: none;
+  display: inline-block;
+}
+
+.sub-navigation a {
+  padding: 5px 15px;
+  background: #065635;
+  color: #F5F5F5;
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 32px;
+  text-transform: uppercase;
+  border: none;
+  display: inline-block;
 }
 
 h2 {
-  font-family: 'Kumar One', cursive;
+  font-family: "Kumar One", cursive;
   font-weight: 400;
+  font-size: 3.3rem;
   line-height: 58px;
   letter-spacing: 2.1px;
+  text-transform: uppercase;
 }
 
 .home-page-section-1 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .home-page-section-1 div:first-of-type {
-  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  padding: 40px;
 }
 
 .home-page-section-1 div:last-child {
-  width: 40%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  margin-top: 80px;
+}
+
+.home-page-section-1 img {
+  border-left: 10px solid #F8FB05;
+  border-bottom: 15px solid #F8FB05;
 }
 
 .home-page-section-2,
 .home-page-section-5 {
   background-color: #E0FDDF;
   padding: 70px 20px;
+}
+
+.home-page-section-5 {
+  padding: 0px 0px;
 }
 
 .home-page-section-gallery ul {
@@ -412,28 +487,141 @@ h2 {
   display: inline-flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 40px 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.home-page-section-3 {
+  margin-top: 40px;
+}
+
+.home-page-section-4 {
+  margin-bottom: 40px;
+}
+
+.home-page-section-3 h2,
+.home-page-section-4 h2 {
+  display: inline-block;
+}
+
+.home-page-section-3 div:first-of-type,
+.home-page-section-4 div:first-of-type {
+  margin-right: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+.home-page-section-3 div:last-child,
+.home-page-section-4 div:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+.home-page-section-3 span,
+.home-page-section-4 span {
+  background-color: yellow;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.paragraph-text-sections-3-4 {
+  padding-left: 30px;
 }
 
 .home-page-container-section-5-one,
 .home-page-container-section-5-two {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.home-page-container-section-5-one div:first-of-type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  margin-right: 130px;
+  position: relative;
+  bottom: 40px;
+}
+
+.home-page-container-section-5-one div:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+  margin-top: 80px;
+}
+
+.home-page-container-section-5-two div:first-of-type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+  padding: 40px;
+  margin-right: 50px;
+  text-align: end;
+}
+
+.home-page-container-section-5-two div:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  position: relative;
+  top: 75px;
+}
+
+.home-page-container-section-5-two span {
+  margin-right: 120px;
+}
+
+.home-page-container-section-5-one p {
+  width: 575px;
+}
+
+.home-page-container-section-5-two h2 {
+  padding-right: 140px;
+}
+
+.home-page-container-section-5-two p {
+  width: 575px;
+}
+
+.home-page-container-section-5-one img {
+  border-right: 10px solid #F8FB05;
+  border-bottom: 15px solid #F8FB05;
+}
+
+.home-page-container-section-5-two img {
+  border-left: 10px solid #F8FB05;
+  border-bottom: 15px solid #F8FB05;
 }
 
 .banner-image-background {
   background-image: url(../assets/banner-image.jpg);
   height: 65vh;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: top center;
   margin: 0;
 }
 
 .home-page-container-section-6 {
   width: 75%;
+  padding: 80px 0;
+}
+
+.home-page-container-section-6 h2,
+.section-6-button {
   text-align: center;
-  padding: 60px 0;
 }
 
 .article-aside-container {
@@ -510,4 +698,16 @@ footer p {
 .contact-page .juno-brand-name {
   background-color: #151514;
   color: #F5F5F5;
+}
+
+.juno-brand-name a {
+  color: #F5F5F5;
+}
+
+.juno-brand-name a:hover {
+  background: #8f8f8f;
+  padding: 5px 0px;
+  color: #151514;
+  font-size: 2.2rem;
+  border-radius: 4px;
 }

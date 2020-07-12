@@ -25,3 +25,14 @@ footer p {
     color: $body-background-color;
 }
 
+.juno-brand-name a {
+    color: $body-background-color;
+    &:hover {
+        background:darken($body-background-color, $amount: 40);
+        padding: 5px 0px;
+        color:$black-color;
+        font-size: 2.2rem;
+        border-radius: 4px;
+    }
+}
+

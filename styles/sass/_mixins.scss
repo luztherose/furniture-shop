@@ -1,0 +1,13 @@
+@mixin secondary-links() {
+    padding: 5px 15px;
+    background: $evergreen-color;
+    color: $body-background-color;
+    font-family: $secondary-font;
+    font-size: 2rem;
+    font-weight: $font-weight-regular;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-transform: uppercase;
+    border: none;
+    display: inline-block;
+}
