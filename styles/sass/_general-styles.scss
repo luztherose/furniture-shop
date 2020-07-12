@@ -1,0 +1,35 @@
+
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+html {
+    font-size: 125%;
+}
+body {
+    background-color: $body-background-color;
+    font-family:'Lato', sans-serif;
+    font-weight: 400;
+}
+.blog-page,
+.contact-page {
+    background-color:$ice-color;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}

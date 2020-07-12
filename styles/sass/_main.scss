@@ -1,0 +1,80 @@
+h2 {
+    font-family: 'Kumar One', cursive;
+    font-weight: $font-weight-regular;
+    line-height: 58px;
+    letter-spacing: 2.1px;
+}
+.home-page-section-1 {
+    display: inline-flex;
+}
+.home-page-section-1 div:first-of-type {
+    width: 50%;
+    
+}
+.home-page-section-1 div:last-child {
+    width: 40%;
+}
+.home-page-section-2,
+.home-page-section-5 {
+    background-color:$ice-color;
+    padding: 70px 20px;
+}
+.home-page-section-gallery ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.home-page-section-3,
+.home-page-section-4{
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+.home-page-container-section-5-one,
+.home-page-container-section-5-two {
+    display: inline-flex;
+}
+.banner-image-background {
+    background-image: url(../assets/banner-image.jpg);
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+}
+.home-page-container-section-6 {
+    width: 75%;
+    text-align: center;
+    padding: 60px 0;
+}
+// blog page
+.article-aside-container {
+    display: flex;
+}
+.article-img-container,
+.article-text-container {
+    background-color: $body-background-color;
+    width: 70%;
+    padding: 30px;
+}
+.article-aside-container ul {
+    display: block;
+}
+.comments-section {
+    width: 70%;
+    padding: 40px;
+}
+.first-comment {
+    display: inline-flex;
+}
+.first-comment div:first-of-type,
+.second-comment div:first-of-type{
+    width: 15%;
+}
+.second-comment {
+    display: flex;
+}
+// Comments Form
+form fieldset {
+    border: none;
+}

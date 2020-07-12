@@ -1,0 +1,28 @@
+.home-page nav,ul {
+    display: flex;
+}
+
+nav {
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-right: 50px;
+    ul {
+        li {
+            a {
+                padding: 15px 20px;
+            }
+        }
+    }
+}
+/// blog and contact page navagation
+.main-nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 80px;
+    font-family: $secondary-font;
+    font-size: 22px;
+    font-weight:$font-weight-regular;
+    margin-left: 50px;
+}
