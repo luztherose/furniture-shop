@@ -14,8 +14,8 @@
 <body>
     <div class="blog-page">
         <header>
-            <div>
-                <div class="main-nav-container">
+            <div class="wrapper">
+                <div class="wrapper main-nav-container">
                     <div class="logo">
                         <p><a href="index.html">Sactuary Helpers</a></p>
                     </div>
@@ -28,18 +28,19 @@
                         </ul>
                     </nav>
                 </div>
-                <div>
+                <div class="wrapper">
                     <h1>Blog</h1>
                 </div>
             </div>
         </header>
         <main>
-            <div class="wrapper article-aside-container">
+            <div class="article-aside-container">
                 <article>
-                    <div class="article-img-container">
+                    <div class=" article-img-container">
                         <img src="assets/blog-post-image.jpg" alt="a beautiful small blue sofa">
                     </div>
-                    <div class="article-text-container">
+                    <div class="wrapper article-text-container">
+                        <h2>Finding The Right Pieces For New Space</h2>
                         <p>Monday, <time datetime="2019-10-5">October 5th, 2019</time> by <span>Saron</span></p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia libero necessitatibus
                             dolores quo
@@ -62,18 +63,18 @@
                         <img src="assets/sidebar-image.jpg" alt="A beautiful lamp">
                     </div>
                     <div>
-                        <h2>Our Mission</h2>
+                        <h3>Our Mission</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut ratione tenetur fugit
                             voluptatum
                             officiis.</p>
                     </div>
                     <div>
-                        <h2>Recent Posts</h2>
+                        <h3>Recent Posts</h3>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Provident nemo eius voluptatem nisi ut..</li>
-                            <li>Molestiae architecto debitis provident.</li>
-                            <li>Consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dor sit amet</li>
+                            <li>Provident nemo  nisi ut</li>
+                            <li>Molestiae archecto </li>
+                            <li>Consectetur adiping elit</li>
                         </ul>
                     </div>
                 </aside>
@@ -105,15 +106,15 @@
                 </div>
             </div>
             </section>
-            <form action="#">
+            <form action="#" class="wrapper">
                 <fieldset>
                     <label for="fname">Name</label>
                     <input type="text" id="fname">
                     <label for="email">Email Adress</label>
                     <input type="text" id="email">
-                    <label for="comment"></label><br><br>
-                    <textarea name="comment" id="comment" cols="50" rows="10" plac>Comment</textarea> <br><br>
-                    <input type="submit" value="Submit">
+                    <label for="comment"></label>
+                    <textarea name="comment" id="comment" cols="70" rows="10" placeholder="comment"></textarea>
+                    <input type="submit" value="Post Comment">
                 </fieldset>
             </form>
         </main>

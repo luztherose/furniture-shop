@@ -20,9 +20,12 @@ body {
     background-color:$ice-color;
 }
 ul {
-    list-style: none;
     padding: 0;
     margin: 0;
+}
+nav ul, 
+.home-page-section-gallery ul{
+    list-style: none;
 }
 a {
     text-decoration: none;
@@ -30,6 +33,7 @@ a {
 h1, h2 {
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 img {
     display: block;

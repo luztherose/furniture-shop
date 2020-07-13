@@ -4,17 +4,17 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 84% center; 
+    background-position: 85% center; 
 }
 h1 {
     font-size: 6.8rem;
     font-weight:400;
     font-family: $h1-headings-font;
+    text-transform:uppercase;
 }
 .home-page  h1 {
     width: 45%;
     text-align: center;
-    text-transform:uppercase;
     line-height: 64px;
     margin: 70px 0 60px 0;
 }
@@ -29,13 +29,13 @@ h1 {
 // generals
 .blog-page h1,
 .contact-page h1 {
-    padding: 60px 0 60px  60px;
+    padding: 60px 0 60px  0px;
 }
 // blog page
 
 .blog-page header {
     background-image: url(../assets/blog-image.jpg);
-    height: 75vh;
+    height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 

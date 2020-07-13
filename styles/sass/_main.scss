@@ -1,5 +1,6 @@
 
-h2 {
+h2,
+h3 {
     font-family: $secondary-font;
     font-weight: $font-weight-regular;
     font-size: 3.3rem;
@@ -9,7 +10,7 @@ h2 {
 }
 .home-page-section-1 {
     display: flex;
-    margin:60px;
+    // margin:80px 60px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -18,8 +19,8 @@ h2 {
     padding: 40px;
 }
 .home-page-section-1 div:last-child {
-    flex: 1 1 250px;
-    margin-top: 80px;
+    flex: 1 1 200px;
+    margin-top: 110px;
 }
 .home-page-section-1 {
     img {
@@ -152,35 +153,3 @@ h2 {
 .section-6-button {
     text-align: center;
 }
-// blog page
-.article-aside-container {
-    display: flex;
-}
-.article-img-container,
-.article-text-container {
-    background-color: $body-background-color;
-    width: 70%;
-    padding: 30px;
-}
-.article-aside-container ul {
-    display: block;
-}
-.comments-section {
-    width: 70%;
-    padding: 40px;
-}
-.first-comment {
-    display: inline-flex;
-}
-.first-comment div:first-of-type,
-.second-comment div:first-of-type{
-    width: 15%;
-}
-.second-comment {
-    display: flex;
-}
-// Comments Form
-form fieldset {
-    border: none;
-}
-// 

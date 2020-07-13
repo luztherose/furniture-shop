@@ -1,0 +1,132 @@
+
+//blog page
+.blog-page h1 {
+    margin-top: 50px;
+}
+.article-aside-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+article {
+    flex: 1 1 500px;
+    background-color: $body-background-color;
+    border-right: 8px solid $bright-yellow-color;
+    border-bottom: 8px solid $bright-yellow-color;
+    position: relative;
+    margin-left: -30px;
+    margin-right: 160px;
+}
+.article-img-container {
+    border-right: 15px solid $bright-yellow-color;
+    border-bottom: 15px solid $bright-yellow-color;
+    position: relative;
+    bottom: 140px;
+}
+.article-text-container {
+    width: 560px;
+}
+.article-text-container span {
+    font-weight: bold;
+}
+article h2 {
+    width: 675px;
+    margin-top: -60px;
+}
+.blog-page h2 + p {
+    margin: 0;
+}
+aside {
+    flex: 0 0 300px;
+    margin-left: 80px;
+    align-self: center;
+    background-color: $bright-yellow-color;
+    padding:30px 0px 30px 40px;
+    position: relative;
+}
+aside div:first-of-type {
+    position: relative;
+    bottom: 50px;
+}
+aside p,
+.blog-page ul {
+    width: 300px;
+    margin: 0;
+}
+h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 3rem;
+}
+aside div:first-of-type {
+    width: 300px;
+}
+
+.article-aside-container ul {
+    display: block;
+}
+///////////////////////////
+.comments-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.comments-section h2 {
+    margin-bottom: 30px;
+}
+.first-comment {
+    display: inline-flex;
+}
+.first-comment div:first-of-type,
+.second-comment div:first-of-type{
+    width: 250px;
+    margin-bottom: 50px;
+}
+.first-comment div:last-child,
+.second-comment div:last-child{
+    width: 600px;
+    margin-left: 40px;
+}
+.second-comment {
+    display: flex;
+}
+// Comments Form
+form fieldset {
+    border: none;
+    text-transform: uppercase;
+}
+.blog-page input:first-of-type {
+    display: block;
+}
+.blog-page input[type="text"] {
+    background-color:$ice-color;
+    border: none;
+    border-bottom: 2px solid $evergreen-color;
+    width: 280px;
+    
+}
+.blog-page input:nth-last-of-type(2) {
+    display: block;
+}
+.blog-page textarea {
+    display: block;
+    margin-top: 30px;
+    border: none;
+    border: 2px solid $evergreen-color;
+    background-color: $ice-color;
+    padding: 30px;
+}
+::placeholder  {
+    text-transform: uppercase;
+    color:$black-color;
+}
+.blog-page input[type="submit"] {
+    @include secondary-links();
+    display: block;
+    margin-top: 30px ;
+    width: 715px;
+}
+
+// 
+// * { border:1px solid red !important; }
