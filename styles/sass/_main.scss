@@ -23,9 +23,7 @@ h3 {
 }
 .home-page-section-1 {
     img {
-        // box-shadow: 10px 10px $bright-yellow-color;
-        border-left: 10px solid  $bright-yellow-color;
-        border-bottom: 15px solid  $bright-yellow-color;
+        @include left-bottom-box-shadow();
     }
 }
 .home-page-section-2,
@@ -71,7 +69,7 @@ h3 {
 .home-page-section-3,
 .home-page-section-4 {
     span {
-        background-color: yellow;
+        background-color: $bright-yellow-color;
         padding: 5px;
         width: 20px;
         height: 20px;
@@ -113,24 +111,22 @@ h3 {
 .home-page-container-section-5-two span {
     margin-right: 120px;
 }
-.home-page-container-section-5-one p {
+.home-page-container-section-5-one p,
+.home-page-container-section-5-two p {
     width: 575px;
 }
 .home-page-container-section-5-two h2 {
     padding-right: 140px;
 }
-.home-page-container-section-5-two p {
-    width: 575px;
-}
+
 .home-page-container-section-5-one {
     img {
-        box-shadow: 10px 10px $bright-yellow-color;
+        @include right-bottom-text-shadow();
     }
 }
 .home-page-container-section-5-two {
     img {
-        border-left: 10px solid  $bright-yellow-color;
-        border-bottom: 15px solid  $bright-yellow-color;
+        @include left-bottom-box-shadow();
     }
 }
 .banner-image-background {

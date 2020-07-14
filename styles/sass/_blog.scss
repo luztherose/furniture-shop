@@ -1,5 +1,4 @@
 
-//blog page
 .blog-page h1 {
     margin-top: 50px;
 }
@@ -7,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 article {
     flex: 0 0 60%;
@@ -17,7 +15,7 @@ article {
     position: relative;
 }
 .article-img-container {
-    box-shadow: 10px 10px $bright-yellow-color;
+    @include right-bottom-text-shadow();
     position: relative;
     bottom: 140px;
 }
@@ -88,7 +86,6 @@ aside div:first-of-type {
     display: flex;
 }
 // Comments Form
-
 form fieldset {
     border: none;
     text-transform: uppercase;
@@ -114,5 +111,4 @@ form fieldset {
     width: 715px;
 }
 
-// 
 // * { border:1px solid red !important; }

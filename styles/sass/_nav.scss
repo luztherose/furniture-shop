@@ -1,7 +1,6 @@
 .home-page nav,ul {
     display: flex;
 }
-
 nav {
     justify-content: flex-end;
     padding-top: 20px;
@@ -23,6 +22,7 @@ nav {
     }
 }
 nav {
+    font-weight: $font-weight-bold;
     li  {
         span {
             border-bottom: 3px solid $bright-yellow-color;

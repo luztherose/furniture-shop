@@ -365,6 +365,10 @@ nav ul li a:hover {
   transition: 0.5s;
 }
 
+nav {
+  font-weight: 700;
+}
+
 nav li span {
   border-bottom: 3px solid #F8FB05;
 }
@@ -457,8 +461,10 @@ h3 {
 }
 
 .home-page-section-1 img {
-  border-left: 10px solid #F8FB05;
-  border-bottom: 15px solid #F8FB05;
+  -webkit-box-shadow: 15px 15px #F8FB05;
+          box-shadow: 15px 15px #F8FB05;
+  -webkit-box-shadow: -15px 15px #F8FB05;
+          box-shadow: -15px 15px #F8FB05;
 }
 
 .home-page-section-2,
@@ -527,7 +533,7 @@ h3 {
 
 .home-page-section-3 span,
 .home-page-section-4 span {
-  background-color: yellow;
+  background-color: #F8FB05;
   padding: 5px;
   width: 20px;
   height: 20px;
@@ -588,7 +594,8 @@ h3 {
   margin-right: 120px;
 }
 
-.home-page-container-section-5-one p {
+.home-page-container-section-5-one p,
+.home-page-container-section-5-two p {
   width: 575px;
 }
 
@@ -596,18 +603,16 @@ h3 {
   padding-right: 140px;
 }
 
-.home-page-container-section-5-two p {
-  width: 575px;
-}
-
 .home-page-container-section-5-one img {
-  -webkit-box-shadow: 10px 10px #F8FB05;
-          box-shadow: 10px 10px #F8FB05;
+  -webkit-box-shadow: 15px 15px #F8FB05;
+          box-shadow: 15px 15px #F8FB05;
 }
 
 .home-page-container-section-5-two img {
-  border-left: 10px solid #F8FB05;
-  border-bottom: 15px solid #F8FB05;
+  -webkit-box-shadow: 15px 15px #F8FB05;
+          box-shadow: 15px 15px #F8FB05;
+  -webkit-box-shadow: -15px 15px #F8FB05;
+          box-shadow: -15px 15px #F8FB05;
 }
 
 .banner-image-background {
@@ -655,8 +660,8 @@ article {
 }
 
 .article-img-container {
-  -webkit-box-shadow: 10px 10px #F8FB05;
-          box-shadow: 10px 10px #F8FB05;
+  -webkit-box-shadow: 15px 15px #F8FB05;
+          box-shadow: 15px 15px #F8FB05;
   position: relative;
   bottom: 140px;
 }
@@ -876,21 +881,25 @@ form fieldset {
 ::-webkit-input-placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
 }
 
 ::-ms-input-placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
 }
 
 ::placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
 }
 
 .contact-page input[type="submit"] {
@@ -978,6 +987,25 @@ footer p {
     Home Page Starts here
     ===================================================================================
  */
+@media (max-width: 1250px) {
+  .home-page header {
+    height: 90vh;
+    background-position: 60% center;
+  }
+  .header-box-image {
+    margin-top: 31%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .home-page header {
+    height: 85vh;
+  }
+  .header-box-image {
+    margin-top: 42%;
+  }
+}
+
 @media (max-width: 1024px) {
   .home-page header {
     height: 70vh;
@@ -990,6 +1018,12 @@ footer p {
   h2,
   h3 {
     font-size: 2.5rem;
+  }
+  .home-page-section-1 {
+    margin-bottom: 45px;
+  }
+  .home-page-section-1 div:last-child {
+    margin-top: 20px;
   }
   .home-page-container-section-5-one div:first-of-type {
     -webkit-box-flex: 0;
@@ -1065,6 +1099,9 @@ footer p {
   }
   h2, h3 {
     font-size: 2rem;
+  }
+  .sub-navigation a {
+    font-size: 1.6rem;
   }
 }
 
@@ -1146,8 +1183,8 @@ footer p {
     margin-top: 30px;
   }
   .home-page header {
-    height: 50vh;
-    background-position: 0% left;
+    height: 35vh;
+    background-position: 35% center;
   }
   .home-page nav, .home-page ul {
     -ms-flex-wrap: nowrap;
@@ -1172,6 +1209,9 @@ footer p {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+  .home-page-section-gallery li:nth-last-of-type(3) {
+    display: none;
   }
 }
 
@@ -1255,6 +1295,12 @@ footer p {
 }
 
 @media (max-width: 760px) {
+  article {
+    border: none;
+  }
+  aside {
+    display: none;
+  }
   .main-nav-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1282,9 +1328,6 @@ footer p {
     padding: 30px;
     height: 200px;
     width: 80%;
-  }
-  aside {
-    display: none;
   }
   .blog-page input[type="submit"] {
     width: 80%;
@@ -1353,6 +1396,13 @@ footer p {
     ===================================================================================
  */
 @media (max-width: 1250px) {
+  .contact-page header {
+    background-position: center;
+  }
+  .contact-page h1 {
+    padding-left: 30px;
+    margin-top: 100px;
+  }
   .contact-page textarea {
     width: 80%;
     height: 200px;
@@ -1393,6 +1443,9 @@ footer p {
 }
 
 @media (max-width: 660px) {
+  .contact-page header {
+    height: 45vh;
+  }
   .contact-page input[type="email"] {
     width: 60%;
   }
@@ -1401,9 +1454,9 @@ footer p {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 460px) {
   .contact-page h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 

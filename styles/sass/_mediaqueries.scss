@@ -4,6 +4,23 @@
     Home Page Starts here
     ===================================================================================
  */
+@media (max-width:1250px) {
+    .home-page header {
+        height: 90vh;
+        background-position: 60% center; 
+    }
+    .header-box-image {
+        margin-top: 31%;
+    }
+}
+@media (max-width:1150px) {
+    .home-page header {
+        height: 85vh;
+    }
+    .header-box-image {
+        margin-top: 42%;
+    }
+}
 @media (max-width:1024px) {
     .home-page header {
         height: 70vh;
@@ -16,6 +33,12 @@
     h2, 
     h3 {
         font-size: 2.5rem;
+    }
+    .home-page-section-1 {
+        margin-bottom: 45px;
+    }
+    .home-page-section-1 div:last-child {
+        margin-top: 20px;
     }
     .home-page-container-section-5-one div:first-of-type {
         flex: 0 0 500px;
@@ -80,6 +103,9 @@
     }
     h2, h3 {
         font-size: 2rem;
+    }
+    .sub-navigation a {
+        font-size: 1.6rem;
     }
 }
 @media (max-width:600px) { 
@@ -163,8 +189,8 @@
         margin-top: 30px;
     }
     .home-page header {
-        height: 50vh;
-        background-position: 0% left; 
+        height: 35vh;
+        background-position: 35% center; 
     }
     .home-page nav, .home-page ul {
         flex-wrap: nowrap;
@@ -185,7 +211,9 @@
     .home-page-container-section-5-two div:first-of-type {
         flex: 0 0 100%;
     }
-    
+    .home-page-section-gallery li:nth-last-of-type(3) {
+        display: none;
+    }
 }
 @media (max-width:480px) {
     h2,h3 {
@@ -205,6 +233,7 @@
         text-align: justify;
         margin-right: -20px;
     }
+    //  * { border:1px solid red !important; }
 }
 /* ==================================================================================
     Blog Page Starts here
@@ -257,6 +286,12 @@
     }
 }
 @media (max-width:760px) {
+    article {
+        border:none;
+    }
+    aside {
+        display: none;
+    }
     .main-nav-container {
         flex-direction: column;
         justify-content: center;
@@ -272,9 +307,6 @@
     .blog-page textarea {
         @include form-comment-field();
         width: 80%;
-    }
-    aside {
-        display: none;
     }
     .blog-page input[type="submit"] {
         width: 80%;
@@ -334,13 +366,20 @@
     .second-comment div:first-of-type {
         width:100%;
     }
-    // * { border:1px solid red !important; }
+    
 }
 /* ==================================================================================
     Contact Page Starts here
     ===================================================================================
  */
 @media (max-width:1250px) {
+    .contact-page header {
+        background-position: center; 
+    }
+    .contact-page h1 {
+        padding-left: 30px;
+        margin-top: 100px;
+    }
     .contact-page textarea  {
         width: 80%;
         height: 200px;
@@ -348,6 +387,7 @@
     .contact-page input[type="submit"] {
         width: 80%;
     }
+
 }
 @media (max-width:775px) {
     .contact-page form {
@@ -373,6 +413,9 @@
     }
 }
 @media (max-width:660px) {
+    .contact-page header {
+        height: 45vh;
+    }
     .contact-page input[type="email"] {
         width: 60%;
     }
@@ -380,9 +423,9 @@
         width: 60%;
     }
 }
-@media (max-width:660px) {
+@media (max-width:460px) {
     .contact-page h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
 @media (max-width:380px) {

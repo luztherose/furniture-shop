@@ -29,3 +29,10 @@
     padding: 30px;
     height: 200px;
 }
+@mixin left-bottom-box-shadow() {
+    box-shadow: 15px 15px  $bright-yellow-color;
+    box-shadow: -15px 15px  $bright-yellow-color;
+}
+@mixin right-bottom-text-shadow() {
+    box-shadow: 15px 15px $bright-yellow-color;
+}
