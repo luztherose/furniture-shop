@@ -16,16 +16,12 @@ h1 {
     width: 45%;
     text-align: center;
     line-height: 64px;
-    margin: 70px 0 60px 0;
+    margin: 70px 0 110px 0;
 }
 .header-box-image {
-    background-image: url(../assets/header-box.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 45%;
-    height: 65vh;
-    background-position: 60% center; 
 }
+
 // generals
 .blog-page h1,
 .contact-page h1 {
@@ -47,4 +43,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 38% left; 
+}
+.contact-page h1 {
+    padding-left: 30px;
 }

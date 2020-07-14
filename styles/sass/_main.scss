@@ -10,13 +10,12 @@ h3 {
 }
 .home-page-section-1 {
     display: flex;
-    // margin:80px 60px;
     justify-content: center;
     flex-wrap: wrap;
 }
 .home-page-section-1 div:first-of-type {
     flex: 1 1 600px;
-    padding: 40px;
+    padding: 70px 40px 0 40px;
 }
 .home-page-section-1 div:last-child {
     flex: 1 1 200px;
@@ -24,7 +23,7 @@ h3 {
 }
 .home-page-section-1 {
     img {
-        // box-shadow: 1px 5px  0px 10px $bright-yellow-color;
+        // box-shadow: 10px 10px $bright-yellow-color;
         border-left: 10px solid  $bright-yellow-color;
         border-bottom: 15px solid  $bright-yellow-color;
     }
@@ -89,7 +88,6 @@ h3 {
     flex-wrap: wrap;
     position: relative;
 }
-
 .home-page-container-section-5-one div:first-of-type {
     flex: 1 1 250px;
     margin-right: 130px;
@@ -126,8 +124,7 @@ h3 {
 }
 .home-page-container-section-5-one {
     img {
-        border-right: 10px solid  $bright-yellow-color;
-        border-bottom: 15px solid  $bright-yellow-color;
+        box-shadow: 10px 10px $bright-yellow-color;
     }
 }
 .home-page-container-section-5-two {
@@ -141,7 +138,6 @@ h3 {
     height: 65vh;
     background-repeat: no-repeat;
     background-size: cover;
-    // background-attachment: fixed;
     background-position: top center;
     margin: 0;
 }

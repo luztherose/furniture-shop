@@ -5,22 +5,19 @@
 }
 .article-aside-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     
 }
 article {
-    flex: 1 1 500px;
+    flex: 0 0 60%;
     background-color: $body-background-color;
     border-right: 8px solid $bright-yellow-color;
     border-bottom: 8px solid $bright-yellow-color;
     position: relative;
-    margin-left: -30px;
-    margin-right: 160px;
 }
 .article-img-container {
-    border-right: 15px solid $bright-yellow-color;
-    border-bottom: 15px solid $bright-yellow-color;
+    box-shadow: 10px 10px $bright-yellow-color;
     position: relative;
     bottom: 140px;
 }
@@ -62,11 +59,10 @@ h3 {
 aside div:first-of-type {
     width: 300px;
 }
-
 .article-aside-container ul {
     display: block;
 }
-///////////////////////////
+// Comment section
 .comments-section {
     display: flex;
     flex-direction: column;
@@ -92,30 +88,20 @@ aside div:first-of-type {
     display: flex;
 }
 // Comments Form
+
 form fieldset {
     border: none;
     text-transform: uppercase;
 }
-.blog-page input:first-of-type {
-    display: block;
-}
 .blog-page input[type="text"] {
-    background-color:$ice-color;
-    border: none;
-    border-bottom: 2px solid $evergreen-color;
-    width: 280px;
-    
+    @include input-form();
 }
-.blog-page input:nth-last-of-type(2) {
-    display: block;
+.blog-page input[type="email"] {
+    @include input-form();
+    margin-left: 20px;
 }
 .blog-page textarea {
-    display: block;
-    margin-top: 30px;
-    border: none;
-    border: 2px solid $evergreen-color;
-    background-color: $ice-color;
-    padding: 30px;
+    @include form-comment-field();
 }
 ::placeholder  {
     text-transform: uppercase;

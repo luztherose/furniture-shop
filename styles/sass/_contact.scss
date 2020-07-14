@@ -1,10 +1,28 @@
+
+.contact-page-form-container {
+    display: flex;
+    margin-bottom: 80px;
+    margin-top: -140px;
+}
+.contact-page form {
+    background-color: $body-background-color;
+    width: 70%;
+    padding: 30px 15px;
+    
+}
+.contact-page input[type="text"] {
+    @include input-form();
+    background-color: $body-background-color;
+}
+.contact-page input[type="email"] {
+    @include input-form();
+    background-color: $body-background-color;
+}
 .contact-page textarea  {
-    display: block;
-    margin-top: 30px;
-    border: none;
-    border: 2px solid $evergreen-color;
-    // background-color: $ice-color;
-    padding: 30px;
+    @include form-comment-field();
+    width: 750px;
+    height: 300px;
+    background-color: $body-background-color;
 }
 ::placeholder  {
     text-transform: uppercase;
@@ -14,5 +32,32 @@
     @include secondary-links();
     display: block;
     margin-top: 30px ;
-    width: 540px;
+    width: 750px;
+}
+.contact-page form {
+    box-shadow: 10px 10px $bright-yellow-color;
+}
+// social-media-section
+.contact-page {
+    li {
+        a {
+            padding: 10px 10px;
+            i{
+                color: $evergreen-color;
+                &:hover {
+                    font-size: 30px;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+.social-media-section {
+    margin:200px 0 0 100px;
+    p {
+        margin: 0;
+    }
+}
+.social-media-section p:first-of-type {
+    padding-bottom: 15px;
 }

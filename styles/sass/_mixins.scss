@@ -11,3 +11,21 @@
     border: none;
     display: inline-block;
 }
+@mixin input-form() {
+    background-color:$ice-color;
+    border: none;
+    border-bottom: 2px solid $evergreen-color;
+    width: 300px;
+    padding: 30px 20px;
+    margin: 0px 40px;
+    
+}
+@mixin form-comment-field() {
+    display: block;
+    margin-top: 30px;
+    border: none;
+    border: 2px solid $evergreen-color;
+    background-color: $ice-color;
+    padding: 30px;
+    height: 200px;
+}
